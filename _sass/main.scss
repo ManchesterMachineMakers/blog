@@ -1,0 +1,137 @@
+@font-face {
+    font-family: neuropolitical;
+    src: url('/fonts/neuropolitical.ttf');
+}
+// @font-face {
+//     font-family: 'Roman Serif';
+//     src: url('/fonts/romanserif/RomanSerif.ttf');
+// }
+$monospace: 'DejaVu Sans Mono', 'Courier New', Courier, monospace;
+
+body {
+    font-family: $monospace;
+}
+
+header.site-header, footer.site-footer {
+    background-color: black;
+    color: white;
+    z-index: 999;
+}
+header.site-header {
+    top: 0;
+    position: sticky;
+}
+
+a.site-title-logo {
+    margin-top: 10px;
+}
+footer.site-footer, footer.site-footer .footer-col-wrapper .footer-col {
+    text-align: center;
+    width: 100%;
+    font-family: neuropolitical;
+    .footer-col-wrapper .footer-col {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 600px) {
+    div.trigger a.page-link {
+        color: white;
+    }
+    nav.site-nav, a.site-title {
+        display: inline;
+        float: none;
+    }
+    nav.site-nav {
+        width: 100%;
+        text-align: center;
+    }
+    a.site-title-logo {
+        display: inline;
+        position: absolute;
+        top: 7px;
+        left: 10px;
+        margin-top: 0;
+    }
+    nav.site-nav, nav.site-nav * {
+        color: white;
+        text-transform: uppercase;
+        font-family: neuropolitical, Arial, sans-serif;
+    }
+    div.site-title-container {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    .profile .image-container {
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav.site-nav, nav.site-nav * {
+        color: black;
+    }
+    a.site-title {
+        display: none;
+    }
+    a.site-title-logo {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .profile {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: space-between !important;
+    }
+}
+a.site-title, a.site-title:visited {
+    color: white;
+    font-family: neuropolitical, Arial, Helvetica, sans-serif;
+}
+
+a.social-link {
+    color: white;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.social-media-list {
+    display: inline;
+    margin-left: 8px;
+    li {
+        display: inline;
+        margin-right: 5px;
+    }
+}
+
+.profile {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    img {
+        border-radius: 5px;
+    }
+    figcaption {
+        margin: 30px;
+    }
+    a {
+        color: cyan;
+    }
+    padding: 10px;
+    border: 1px solid black;
+}
+body {
+    overflow-x: hidden;
+}
+.sponsors img {
+    display: block;
+}
