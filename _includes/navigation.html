@@ -1,0 +1,5 @@
+<div class="trigger">
+    {% for page in site.data.navigation %}
+        <a class="page-link" id="{{ page.title }}" href="{{page.url}}">{{ page.title }}</a>
+    {% endfor %}
+</div>
