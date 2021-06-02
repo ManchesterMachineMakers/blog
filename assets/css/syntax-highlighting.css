@@ -1,7 +1,7 @@
 /*Zenburn theme from https://github.com/jwarby/pygments-css */
 .highlighter-rouge, .highlight, .highlight code, .highlight pre {
     color: #fdce93;
-    background-color: #3f3f3f;
+    background-color: #3f3f3f !important;
 }
 
 .highlight .hll {
