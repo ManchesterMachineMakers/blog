@@ -2,7 +2,17 @@
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
   color: #d0d0d0;
-  background-color: #151515;
+  background-color: #151515 !important;
+}
+.highlight {
+  border-radius: 10px;
+  border: none;
+}
+pre.highlight {
+  padding: 20px;
+}
+.highlight code {
+  background-color: #151515 !important;
 }
 .highlight .err {
   color: #151515;
